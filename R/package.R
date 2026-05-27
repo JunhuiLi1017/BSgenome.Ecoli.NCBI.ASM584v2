@@ -1,0 +1,56 @@
+#' Full genome sequences for Escherichia coli K-12 MG1655 (NCBI ASM584v2)
+#'
+#' @description
+#' A \code{\link[BSgenome]{BSgenome}} object containing the complete genome
+#' sequence of \emph{Escherichia coli} K-12 MG1655 as provided by NCBI
+#' (assembly accession GCF_000005845.2 / ASM584v2).
+#'
+#' @details
+#' The package contains a single circular chromosome:
+#' \describe{
+#'   \item{\code{U00096.3}}{The complete E. coli K-12 MG1655 chromosome
+#'     (4,641,652 bp). Annotated as circular (\code{circ_seqs = "U00096.3"}).}
+#' }
+#'
+#' @section Source:
+#' Sequences were downloaded from NCBI RefSeq and packaged using
+#' \code{\link[BSgenomeForge]{forgeBSgenomeDataPkgFromNCBI}} from the
+#' BSgenomeForge package. The original FASTA file is available at:
+#' \url{https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/005/845/GCF_000005845.2_ASM584v2/}
+#'
+#' @section Usage:
+#' \preformatted{
+#' library(BSgenome.Ecoli.NCBI.ASM584v2)
+#'
+#' # Access the BSgenome object
+#' genome <- BSgenome.Ecoli.NCBI.ASM584v2
+#'
+#' # Inspect available sequences
+#' seqnames(genome)          # "U00096.3"
+#' seqlengths(genome)        # 4641652
+#' isCircular(genome)        # TRUE
+#'
+#' # Retrieve the full chromosome sequence
+#' genome[["U00096.3"]]
+#'
+#' # Retrieve a subsequence (positions 1-200)
+#' getSeq(genome, "U00096.3", start = 1, end = 200)
+#' }
+#'
+#' @references
+#' Blattner FR, et al. (1997) The complete genome sequence of
+#' \emph{Escherichia coli} K-12. \emph{Science} 277(5331):1453-1462.
+#' \doi{10.1126/science.277.5331.1453}
+#'
+#' Hayashi K, et al. (2006) Highly accurate genome sequences of
+#' \emph{Escherichia coli} K-12 strains MG1655 and W3110.
+#' \emph{Mol Syst Biol} 2:2006.0007.
+#' \doi{10.1038/msb4100049}
+#'
+#' @seealso
+#' \code{\link[BSgenome]{BSgenome-class}},
+#' \code{\link[BSgenomeForge]{forgeBSgenomeDataPkgFromNCBI}}
+#'
+#' @name BSgenome.Ecoli.NCBI.ASM584v2
+#' @aliases BSgenome.Ecoli.NCBI.ASM584v2-package
+"_PACKAGE"

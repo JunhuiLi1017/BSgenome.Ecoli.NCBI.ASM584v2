@@ -1,0 +1,35 @@
+Package: BSgenome.Ecoli.NCBI.ASM584v2
+Title: Full genome sequences for Escherichia coli K-12 MG1655 (NCBI assembly ASM584v2)
+Description: Full genome sequences for Escherichia coli K-12 MG1655 as
+    provided by NCBI (assembly accession GCF_000005845.2 / ASM584v2,
+    chromosome U00096.3, 4,641,652 bp). The sequences are stored in an
+    on-disk format that is compatible with the BSgenome infrastructure,
+    enabling efficient random-access retrieval of subsequences. This package
+    is intended as a companion data resource for TmCalculator and related
+    Bioconductor workflows requiring the E. coli K-12 MG1655 reference genome.
+Version: 1.0.0
+Author: Junhui Li [aut, cre]
+Maintainer: Junhui Li <ljh.biostat@gmail.com>
+License: Artistic-2.0
+Depends:
+    R (>= 4.1.0),
+    BSgenome (>= 1.58.0)
+biocViews: AnnotationData, BSgenome, Genome, Escherichia_coli
+organism: Escherichia coli
+common_name: E. coli
+provider: NCBI
+provider_version: GCF_000005845.2
+release_date: 2013
+release_name: ASM584v2
+source_url: https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/005/845/GCF_000005845.2_ASM584v2/
+BSgenomeObjname: Ecoli
+seqnames: U00096.3
+circ_seqs: U00096.3
+mseqnames: NA
+seqs_srcdir: inst/extdata
+seqfiles_suffix: .2bit
+VignetteBuilder: knitr
+URL: https://github.com/junhuilab/BSgenome.Ecoli.NCBI.ASM584v2
+BugReports: https://github.com/junhuilab/BSgenome.Ecoli.NCBI.ASM584v2/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.2
