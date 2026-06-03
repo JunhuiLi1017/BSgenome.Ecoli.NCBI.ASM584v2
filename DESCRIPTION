@@ -7,7 +7,7 @@ Description: Full genome sequences for Escherichia coli K-12 MG1655 as
     enabling efficient random-access retrieval of subsequences. This package
     is intended as a companion data resource for TmCalculator and related
     Bioconductor workflows requiring the E. coli K-12 MG1655 reference genome.
-Version: 1.0.0
+Version: 0.99.0
 Author: Junhui Li [aut, cre]
 Maintainer: Junhui Li <ljh.biostat@gmail.com>
 License: Artistic-2.0
