@@ -53,4 +53,5 @@
 #'
 #' @name BSgenome.Ecoli.NCBI.ASM584v2
 #' @aliases BSgenome.Ecoli.NCBI.ASM584v2-package
+#' @import BSgenome
 "_PACKAGE"
